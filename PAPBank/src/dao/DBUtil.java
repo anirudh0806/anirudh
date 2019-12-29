@@ -15,9 +15,9 @@ import java.sql.Statement;
  * @author Anirudh
  */
 public class DBUtil {
+   private static Connection con = null;
     
-   public static void main(String[] args) {
-      Connection con = null;
+   static {
       
       try {
          //Registering the HSQLDB JDBC driver
@@ -25,19 +25,18 @@ public class DBUtil {
          //Creating the connection with HSQLDB
          con = DriverManager.getConnection("jdbc:hsqldb:hsql://localhost/papdb", "SA", "");
          
-         Statement stmt = con.createStatement();
-         ResultSet result = stmt.executeQuery(
-            "select user_id, password, role  from login_tbl");
-         
-         while(result.next()){
-            System.out.println(result.getString("user_id")+" | "+
-               result.getString("password")+" | "+
-               result.getString("role"));
-         }
-         
-      
       }  catch (Exception e) {
          e.printStackTrace(System.out);
       }
+   }
+   
+   public static ResultSet executeSelect(String sql) throws Exception {
+       Statement stmt = con.createStatement();
+       return stmt.executeQuery(sql);
+   }
+   
+   public static int executeInsert(String sql) throws Exception {
+       Statement stmt = con.createStatement();
+       return stmt.executeUpdate(sql);
    }
 }

@@ -7,9 +7,11 @@ CREATE TABLE login_tbl (
 
 INSERT INTO login_tbl (user_id, password, role, creation_date) VALUES ('anirudh','anirudh', 'Admin', NOW());
 
+INSERT INTO user_info (user_name, dob, role, father_name, mother_name, occupation) VALUES ();
+
 CREATE TABLE user_info (
    user_name VARCHAR(50) NOT NULL,
-   dob DATE,
+   dob VARCHAR(50),
    role varchar(50),
    father_name VARCHAR(50),
    mother_name VARCHAR(50), 
