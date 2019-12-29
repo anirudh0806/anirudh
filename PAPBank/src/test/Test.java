@@ -15,6 +15,8 @@ import dao.BankDAOImpl;
 public class Test {
     public static void main(String[] args) {
         BankDAO dao = new BankDAOImpl();
-        dao.createAccount("Mahesh", "Male", "Actor", "1971-08-21", "", "", "", "Krishna", "Nirmala", "", "", "");
+        //dao.createAccount("Mahesh", "Male", "Actor", "1971-08-21", "", "", "", "Krishna", "Nirmala", "", "", "");
+        dao.createLogin("mbabu", "mbabu", "Admin");
+        
     }
 }

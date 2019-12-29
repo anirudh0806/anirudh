@@ -14,4 +14,6 @@ public interface BankDAO {
     public int createAccount(String name, String gender, String occupation, String dateOfBirth, String idProof1, String idProof2, String idProof3, 
             String fatherName, String motherName, String address, String typeOfAccount, String userName);
     
+    
+    public int createLogin(String userId, String password, String role);
 }

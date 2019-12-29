@@ -24,6 +24,19 @@ public class BankDAOImpl implements BankDAO {
         }
         return -1;
     }
+
+    @Override
+    public int createLogin(String userId, String password, String role) {
+        try{
+            String sql = "INSERT INTO login_tbl (user_id, password, role, creation_date) VALUES  "
+                + "('"+userId+"','"+password+"','"+role+"',NOW())";
+            System.out.println(sql);
+        return DBUtil.executeInsert(sql);
+        }catch(Exception e) {
+            e.printStackTrace();
+        }
+        return -1; 
+    }
     
     
 }
