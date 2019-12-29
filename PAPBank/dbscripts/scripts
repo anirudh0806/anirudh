@@ -1,0 +1,41 @@
+CREATE TABLE login_tbl (
+   user_id VARCHAR(50) NOT NULL,
+   password VARCHAR(50) NOT NULL,
+   creation_date DATE,
+   role varchar(50) 
+);
+
+INSERT INTO login_tbl (user_id, password, role, creation_date) VALUES ('anirudh','anirudh', 'Admin', NOW());
+
+CREATE TABLE user_info (
+   user_name VARCHAR(50) NOT NULL,
+   dob DATE,
+   role varchar(50),
+   father_name VARCHAR(50),
+   mother_name VARCHAR(50), 
+   occupation VARCHAR(50)
+);
+
+CREATE TABLE account_info (
+    account_id VARCHAR(50),
+    user_id VARCHAR(50),
+    account_type VARCHAR(50),
+    balance float
+);
+
+CREATE TABLE Transaction_Table (
+     account_id VARCHAR(50) NOT NULL,
+     paid_to VARCHAR(50),
+     amount float,
+     date DATE,
+     time TIME,
+     DEBIT_OR_CREDIT VARCHAR(10)
+)
+
+CREATE TABLE THIRDPARTY (
+    PARTY_name VARCHAR(50),
+    PARTY_id VARCHAR(50),
+    account_no VARCHAR(50),
+    IFSC_code VARCHAR(50),
+    TYPE VARCHAR(10)
+    )
