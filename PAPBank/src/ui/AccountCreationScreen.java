@@ -57,67 +57,68 @@ public class AccountCreationScreen extends javax.swing.JPanel {
         jTextArea1 = new javax.swing.JTextArea();
         jLabel11 = new javax.swing.JLabel();
         jTextField7 = new javax.swing.JTextField();
-        jButton1 = new javax.swing.JButton();
-        jButton2 = new javax.swing.JButton();
+        jbtnReset = new javax.swing.JButton();
+        jbtnCreateAccount = new javax.swing.JButton();
 
+        jLabel1.setFont(new java.awt.Font("Consolas", 1, 12)); // NOI18N
         jLabel1.setText("NAME");
 
+        jLabel2.setFont(new java.awt.Font("Consolas", 1, 12)); // NOI18N
         jLabel2.setText("AGE");
 
+        jLabel3.setFont(new java.awt.Font("Consolas", 1, 12)); // NOI18N
         jLabel3.setText("GENDER");
 
         jLabel4.setFont(new java.awt.Font("Consolas", 1, 14)); // NOI18N
         jLabel4.setText("           ACCOUNT CREATION FORM");
 
+        jLabel5.setFont(new java.awt.Font("Consolas", 1, 12)); // NOI18N
         jLabel5.setText("OCCUPATION");
 
+        jLabel6.setFont(new java.awt.Font("Consolas", 1, 12)); // NOI18N
         jLabel6.setText("TYPE OF ID PROOF");
 
+        jLabel7.setFont(new java.awt.Font("Consolas", 1, 12)); // NOI18N
         jLabel7.setText("DATE OF BIRTH");
 
+        jLabel8.setFont(new java.awt.Font("Consolas", 1, 12)); // NOI18N
         jLabel8.setText("FATHER'S NAME");
 
+        jLabel9.setFont(new java.awt.Font("Consolas", 1, 12)); // NOI18N
         jLabel9.setText("MOTHER'S NAME");
 
-        jTextField1.setText("jTextField1");
+        jRadioButton1.setText("Male");
 
-        jTextField3.setText("jTextField1");
+        jRadioButton2.setText("Female");
+        jRadioButton2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jRadioButton2ActionPerformed(evt);
+            }
+        });
 
-        jTextField4.setText("jTextField4");
-
-        jTextField2.setText("jTextField1");
-
-        jTextField5.setText("jTextField1");
-
-        jTextField6.setText("jTextField1");
-
-        jTextField8.setText("jTextField1");
-
-        jRadioButton1.setText("jRadioButton1");
-
-        jRadioButton2.setText("jRadioButton2");
-
+        jLabel10.setFont(new java.awt.Font("Consolas", 1, 12)); // NOI18N
         jLabel10.setText("ADDRESS");
 
         jTextArea1.setColumns(20);
         jTextArea1.setRows(5);
         jScrollPane1.setViewportView(jTextArea1);
 
+        jLabel11.setFont(new java.awt.Font("Consolas", 1, 12)); // NOI18N
         jLabel11.setText("TYPE OF ACCOUNT");
 
-        jTextField7.setText("jTextField1");
-
-        jButton1.setText("RESET");
-        jButton1.addActionListener(new java.awt.event.ActionListener() {
+        jbtnReset.setFont(new java.awt.Font("Arial", 0, 18)); // NOI18N
+        jbtnReset.setText("RESET");
+        jbtnReset.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton1ActionPerformed(evt);
+                jbtnResetActionPerformed(evt);
             }
         });
 
-        jButton2.setText("CREATE ACCOUNT");
-        jButton2.addActionListener(new java.awt.event.ActionListener() {
+        jbtnCreateAccount.setFont(new java.awt.Font("Arial", 0, 18)); // NOI18N
+        jbtnCreateAccount.setText("CREATE ACCOUNT");
+        jbtnCreateAccount.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton2ActionPerformed(evt);
+                jbtnCreateAccountActionPerformed(evt);
             }
         });
 
@@ -167,9 +168,7 @@ public class AccountCreationScreen extends javax.swing.JPanel {
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                     .addComponent(jLabel9)
                                     .addComponent(jLabel10)
-                                    .addGroup(layout.createSequentialGroup()
-                                        .addGap(15, 15, 15)
-                                        .addComponent(jLabel11)))
+                                    .addComponent(jLabel11))
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
@@ -177,14 +176,11 @@ public class AccountCreationScreen extends javax.swing.JPanel {
                                         .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 251, Short.MAX_VALUE))
                                     .addComponent(jTextField7, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 251, javax.swing.GroupLayout.PREFERRED_SIZE)))))
                     .addGroup(layout.createSequentialGroup()
-                        .addGap(478, 478, 478)
-                        .addComponent(jButton1)))
+                        .addGap(312, 312, 312)
+                        .addComponent(jbtnCreateAccount, javax.swing.GroupLayout.PREFERRED_SIZE, 214, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(56, 56, 56)
+                        .addComponent(jbtnReset, javax.swing.GroupLayout.PREFERRED_SIZE, 107, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addContainerGap(526, Short.MAX_VALUE))
-            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addGroup(layout.createSequentialGroup()
-                    .addGap(303, 303, 303)
-                    .addComponent(jButton2)
-                    .addContainerGap(852, Short.MAX_VALUE)))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -232,24 +228,25 @@ public class AccountCreationScreen extends javax.swing.JPanel {
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jTextField7, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel11, javax.swing.GroupLayout.PREFERRED_SIZE, 24, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 52, Short.MAX_VALUE)
-                .addComponent(jButton1)
-                .addGap(20, 20, 20))
-            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                    .addContainerGap(581, Short.MAX_VALUE)
-                    .addComponent(jButton2)
-                    .addGap(20, 20, 20)))
+                .addGap(26, 26, 26)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jbtnReset, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jbtnCreateAccount, javax.swing.GroupLayout.PREFERRED_SIZE, 34, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap(33, Short.MAX_VALUE))
         );
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+    private void jbtnResetActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jbtnResetActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jButton1ActionPerformed
+    }//GEN-LAST:event_jbtnResetActionPerformed
 
-    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
+    private void jbtnCreateAccountActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jbtnCreateAccountActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jButton2ActionPerformed
+    }//GEN-LAST:event_jbtnCreateAccountActionPerformed
+
+    private void jRadioButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jRadioButton2ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jRadioButton2ActionPerformed
 
 
     public static void main(String args[]) {
@@ -263,8 +260,6 @@ public class AccountCreationScreen extends javax.swing.JPanel {
     private javax.swing.ButtonGroup buttonGroup2;
     private javax.swing.ButtonGroup buttonGroup3;
     private javax.swing.ButtonGroup buttonGroup4;
-    private javax.swing.JButton jButton1;
-    private javax.swing.JButton jButton2;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
@@ -288,5 +283,7 @@ public class AccountCreationScreen extends javax.swing.JPanel {
     private javax.swing.JTextField jTextField6;
     private javax.swing.JTextField jTextField7;
     private javax.swing.JTextField jTextField8;
+    private javax.swing.JButton jbtnCreateAccount;
+    private javax.swing.JButton jbtnReset;
     // End of variables declaration//GEN-END:variables
 }
