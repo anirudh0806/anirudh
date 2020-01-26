@@ -38,7 +38,7 @@ public class ApproverScreen extends javax.swing.JFrame {
 
         jLabel1.setFont(new java.awt.Font("Times New Roman", 1, 24)); // NOI18N
         jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.TRAILING);
-        jLabel1.setText("LIST OF ALL NEW ACCOUNTS TO BE VERIFIED AND PROCESSED");
+        jLabel1.setText("LIST OF  NEW ACCOUNTS TO BE VERIFIED AND PROCESSED");
 
         jTable2.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
         jTable2.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
