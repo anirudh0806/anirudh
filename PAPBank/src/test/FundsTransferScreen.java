@@ -9,7 +9,7 @@ package test;
  *
  * @author Anirudh
  */
-public class FundsTransferScreen extends javax.swing.JFrame {
+public class FundsTransferScreen extends javax.swing.JInternalFrame {
 
     /**
      * Creates new form FundsTransferScreen

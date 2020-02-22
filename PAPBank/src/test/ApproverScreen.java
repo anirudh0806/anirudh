@@ -9,7 +9,7 @@ package test;
  *
  * @author Anirudh
  */
-public class ApproverScreen extends javax.swing.JFrame {
+public class ApproverScreen extends javax.swing.JInternalFrame {
 
     /**
      * Creates new form ApproverScreen

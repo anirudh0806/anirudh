@@ -9,7 +9,7 @@ package test;
  *
  * @author Anirudh
  */
-public class CustomerScreen extends javax.swing.JFrame {
+public class CustomerScreen extends javax.swing.JInternalFrame {
 
     /**
      * Creates new form CustomerScreen
